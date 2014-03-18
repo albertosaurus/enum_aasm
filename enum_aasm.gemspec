@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["arthur.shagall@gmail.com"]
   spec.description   = %q{This gem patches AASM to use PowerEnum enums for states.}
   spec.summary       = %q{Use PowerEnum enums for AASM states.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/albertosaurus/enum_aasm"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
   spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'simplecov'
 
   spec.add_dependency 'aasm'
   spec.add_dependency 'power_enum', '~> 2.0'
